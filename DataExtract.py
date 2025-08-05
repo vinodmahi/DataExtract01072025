@@ -108,6 +108,8 @@ for index, row in project_df.iterrows():
         # Determine which columns are textual
         text_cols = [col for col in src_df.columns if src_df[col].dtype == 'object']
 
+        record_count = len(src_df)
+
         # Insert extracted data into target database
         src_df.to_sql(
             name=row['PrjTbl'],
@@ -119,7 +121,7 @@ for index, row in project_df.iterrows():
         )
         tgt_engine.dispose()  # Close connection to target DB
 
-        print(f"✅ Successfully inserted into {row['TgtDbName']}.{row['PrjTbl']}")
+        print(f"✅ Successfully inserted {record_count} records into {row['TgtDbName']}.{row['PrjTbl']}")
 
         # Update metadata to reflect load progress
         currentdatetime = datetime.now()
@@ -134,6 +136,17 @@ for index, row in project_df.iterrows():
         """
         with dashboard_conn.cursor() as cur:
             cur.execute(update_query)
+            dashboard_conn.commit()
+
+        Inserted_Table = f"""
+            INSERT INTO dashboard.Data_log (
+                Process_startDT, Project_name, From_date, To_Date, Total_Record_Fetched, Process_EndDT
+            ) VALUES (
+                '{currentdatetime_str}', '{row['PrjTbl']}', '{from_date}', '{to_date}', {record_count}, '{currentdatetime_str}'
+            );
+        """
+        with dashboard_conn.cursor() as cur:
+            cur.execute(Inserted_Table)
             dashboard_conn.commit()
 
         print(f"📌 Updated DataLoadedUpto to {to_date} for PrjId {row['PrjId']}")
