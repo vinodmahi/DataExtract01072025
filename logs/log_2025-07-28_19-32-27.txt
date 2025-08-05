@@ -1,0 +1,22 @@
+[2025-07-28 19:32:27] --- Project Metadata Fetched ---
+[2025-07-28 19:32:32] [WARNING] to_date is NULL, running fallback query...
+[2025-07-28 19:32:32] Extracting data from 2025-07-28 06:32:53 to 2025-07-28 09:52:48
+[2025-07-28 19:32:32] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:32:37] [WARNING] to_date is NULL, running fallback query...
+[2025-07-28 19:32:37] Extracting data from 2025-07-25 19:48:41 to 2025-07-25 19:48:41
+[2025-07-28 19:32:38] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:32:38] Extracting data from 2025-07-28 10:01:02 to 2025-07-28 10:19:41
+[2025-07-28 19:32:38] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:32:38] Extracting data from 2025-07-28 09:58:18 to 2025-07-28 09:58:18
+[2025-07-28 19:32:38] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:32:38] Extracting data from 2025-07-28 06:07:42 to 2025-07-28 06:07:42
+[2025-07-28 19:32:38] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:32:38] Extracting data from 2025-07-25 21:30:18 to 2025-07-25 21:30:18
+[2025-07-28 19:32:38] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:32:38] Extracting data from 2025-07-25 16:54:22 to 2025-07-25 16:54:22
+[2025-07-28 19:32:38] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:32:39] Extracting data from 2025-07-25 17:02:50 to 2025-07-25 17:02:50
+[2025-07-28 19:32:39] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:32:39] Extracting data from 2025-07-28 09:56:14 to 2025-07-28 09:56:14
+[2025-07-28 19:32:39] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:32:39] --- Script execution complete ---

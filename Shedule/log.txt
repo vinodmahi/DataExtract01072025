@@ -1,0 +1,392 @@
+[2025-07-28 19:41:11] Project Metadata Fetched
+[2025-07-28 19:41:11] [WARNING] to_date is NULL, running fallback query...
+[2025-07-28 19:41:11] Extracting data from 2025-07-28 06:32:53 to 2025-07-28 09:52:48
+[2025-07-28 19:41:11] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:41:11] [WARNING] to_date is NULL, running fallback query...
+[2025-07-28 19:41:12] Extracting data from 2025-07-25 19:48:41 to 2025-07-25 19:48:41
+[2025-07-28 19:41:12] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:41:12] Extracting data from 2025-07-28 10:01:02 to 2025-07-28 10:24:12
+[2025-07-28 19:41:12] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:41:12] Extracting data from 2025-07-28 09:58:18 to 2025-07-28 09:58:18
+[2025-07-28 19:41:12] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:41:12] Extracting data from 2025-07-28 06:07:42 to 2025-07-28 06:07:42
+[2025-07-28 19:41:12] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:41:12] Extracting data from 2025-07-25 21:30:18 to 2025-07-25 21:30:18
+[2025-07-28 19:41:13] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:41:13] Extracting data from 2025-07-25 16:54:22 to 2025-07-25 16:54:22
+[2025-07-28 19:41:13] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:41:13] Extracting data from 2025-07-25 17:02:50 to 2025-07-25 17:02:50
+[2025-07-28 19:41:13] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:41:13] Extracting data from 2025-07-28 09:56:14 to 2025-07-28 09:56:14
+[2025-07-28 19:41:13] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 19:41:13] Dashboard connection closed. Script complete.
+[2025-07-28 20:44:01] Project Metadata Fetched
+[2025-07-28 20:44:07] [WARNING] to_date is NULL, running fallback query...
+[2025-07-28 20:44:07] Extracting data from 2025-07-28 06:32:53 to 2025-07-28 10:58:51
+[2025-07-28 20:44:07] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 20:44:12] [WARNING] to_date is NULL, running fallback query...
+[2025-07-28 20:44:12] Extracting data from 2025-07-25 19:48:41 to 2025-07-25 19:48:41
+[2025-07-28 20:44:12] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 20:44:12] Extracting data from 2025-07-28 10:01:02 to 2025-07-28 10:24:12
+[2025-07-28 20:44:12] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 20:44:12] Extracting data from 2025-07-28 09:58:18 to 2025-07-28 09:58:18
+[2025-07-28 20:44:12] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 20:44:12] Extracting data from 2025-07-28 06:07:42 to 2025-07-28 06:07:42
+[2025-07-28 20:44:12] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 20:44:13] Extracting data from 2025-07-25 21:30:18 to 2025-07-25 21:30:18
+[2025-07-28 20:44:13] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 20:44:13] Extracting data from 2025-07-25 16:54:22 to 2025-07-25 16:54:22
+[2025-07-28 20:44:13] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 20:44:13] Extracting data from 2025-07-25 17:02:50 to 2025-07-25 17:02:50
+[2025-07-28 20:44:13] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 20:44:13] Extracting data from 2025-07-28 09:56:14 to 2025-07-28 11:28:48
+[2025-07-28 20:44:13] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-28 20:44:13] Dashboard connection closed. Script complete.
+[2025-07-29 11:00:04] Project Metadata Fetched
+[2025-07-29 11:00:09] [WARNING] to_date is NULL, running fallback query...
+[2025-07-29 11:00:09] Extracting data from 2025-07-28 06:32:53 to 2025-07-28 22:02:23
+[2025-07-29 11:00:10] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-29 11:00:15] [WARNING] to_date is NULL, running fallback query...
+[2025-07-29 11:00:15] Extracting data from 2025-07-25 19:48:41 to 2025-07-28 20:00:00
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'FiberDisconnect' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-29 11:00:15] [SUCCESS] Inserted into Dashboard.FiberDisconnect
+[2025-07-29 11:00:15] [INFO] Updated DataLoadedUpto to 2025-07-28 20:00:00 for PrjId 2
+[2025-07-29 11:00:15] Extracting data from 2025-07-28 10:01:02 to 2025-07-28 22:16:30
+[2025-07-29 11:00:15] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-29 11:00:15] Extracting data from 2025-07-28 09:58:18 to 2025-07-28 17:05:14
+[2025-07-29 11:00:15] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-29 11:00:15] Extracting data from 2025-07-28 06:07:42 to 2025-07-28 18:48:01
+[2025-07-29 11:00:15] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-29 11:00:16] Extracting data from 2025-07-25 21:30:18 to 2025-07-28 21:25:50
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Nextiva' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-29 11:00:16] [SUCCESS] Inserted into Dashboard.Nextiva
+[2025-07-29 11:00:16] [INFO] Updated DataLoadedUpto to 2025-07-28 21:25:50 for PrjId 6
+[2025-07-29 11:00:16] Extracting data from 2025-07-25 16:54:22 to 2025-07-28 16:50:42
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'PathFinder' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-29 11:00:16] [SUCCESS] Inserted into Dashboard.PathFinder
+[2025-07-29 11:00:16] [INFO] Updated DataLoadedUpto to 2025-07-28 16:50:42 for PrjId 7
+[2025-07-29 11:00:16] Extracting data from 2025-07-25 17:02:50 to 2025-07-25 17:02:50
+[2025-07-29 11:00:16] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-29 11:00:16] Extracting data from 2025-07-28 09:56:14 to 2025-07-28 17:13:30
+[2025-07-29 11:00:16] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-29 11:00:16] Dashboard connection closed. Script complete.
+[2025-07-30 11:00:05] Project Metadata Fetched
+[2025-07-30 11:00:05] [WARNING] to_date is NULL, running fallback query...
+[2025-07-30 11:00:05] Extracting data from 2025-07-28 06:32:53 to 2025-07-29 19:54:13
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'BttCarrier' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-30 11:00:05] [SUCCESS] Inserted into Dashboard.BttCarrier
+[2025-07-30 11:00:05] [INFO] Updated DataLoadedUpto to 2025-07-29 19:54:13 for PrjId 1
+[2025-07-30 11:00:05] [WARNING] to_date is NULL, running fallback query...
+[2025-07-30 11:00:05] Extracting data from 2025-07-28 20:00:00 to 2025-07-29 19:49:55
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'FiberDisconnect' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-30 11:00:05] [SUCCESS] Inserted into Dashboard.FiberDisconnect
+[2025-07-30 11:00:05] [INFO] Updated DataLoadedUpto to 2025-07-29 19:49:55 for PrjId 2
+[2025-07-30 11:00:06] Extracting data from 2025-07-28 10:01:02 to 2025-07-29 20:00:51
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'BttTransactional' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-30 11:00:06] [SUCCESS] Inserted into Dashboard.BttTransactional
+[2025-07-30 11:00:06] [INFO] Updated DataLoadedUpto to 2025-07-29 20:00:51 for PrjId 3
+[2025-07-30 11:00:06] Extracting data from 2025-07-28 09:58:18 to 2025-07-29 17:08:36
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Commio' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-30 11:00:06] [SUCCESS] Inserted into Dashboard.Commio
+[2025-07-30 11:00:06] [INFO] Updated DataLoadedUpto to 2025-07-29 17:08:36 for PrjId 4
+[2025-07-30 11:00:06] Extracting data from 2025-07-28 06:07:42 to 2025-07-29 19:40:56
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Bandwidth' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-30 11:00:07] [SUCCESS] Inserted into Dashboard.Bandwidth
+[2025-07-30 11:00:07] [INFO] Updated DataLoadedUpto to 2025-07-29 19:40:56 for PrjId 5
+[2025-07-30 11:00:07] Extracting data from 2025-07-28 21:25:50 to 2025-07-29 22:59:03
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Nextiva' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-30 11:00:07] [SUCCESS] Inserted into Dashboard.Nextiva
+[2025-07-30 11:00:07] [INFO] Updated DataLoadedUpto to 2025-07-29 22:59:03 for PrjId 6
+[2025-07-30 11:00:07] Extracting data from 2025-07-28 16:50:42 to 2025-07-29 17:04:43
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'PathFinder' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-30 11:00:07] [SUCCESS] Inserted into Dashboard.PathFinder
+[2025-07-30 11:00:07] [INFO] Updated DataLoadedUpto to 2025-07-29 17:04:43 for PrjId 7
+[2025-07-30 11:00:07] Extracting data from 2025-07-25 17:02:50 to 2025-07-29 17:06:00
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'RingSquare' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-30 11:00:07] [SUCCESS] Inserted into Dashboard.RingSquare
+[2025-07-30 11:00:07] [INFO] Updated DataLoadedUpto to 2025-07-29 17:06:00 for PrjId 8
+[2025-07-30 11:00:07] Extracting data from 2025-07-28 09:56:14 to 2025-07-29 17:00:50
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Spectrotel' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-30 11:00:07] [SUCCESS] Inserted into Dashboard.Spectrotel
+[2025-07-30 11:00:07] [INFO] Updated DataLoadedUpto to 2025-07-29 17:00:50 for PrjId 9
+[2025-07-30 11:00:07] Dashboard connection closed. Script complete.
+[2025-07-31 11:00:05] Project Metadata Fetched
+[2025-07-31 11:00:05] [WARNING] to_date is NULL, running fallback query...
+[2025-07-31 11:00:05] Extracting data from 2025-07-29 19:54:13 to 2025-07-30 19:56:40
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'BttCarrier' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-31 11:00:05] [SUCCESS] Inserted into Dashboard.BttCarrier
+[2025-07-31 11:00:05] [INFO] Updated DataLoadedUpto to 2025-07-30 19:56:40 for PrjId 1
+[2025-07-31 11:00:06] [WARNING] to_date is NULL, running fallback query...
+[2025-07-31 11:00:06] Extracting data from 2025-07-29 19:49:55 to 2025-07-30 19:47:48
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'FiberDisconnect' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-31 11:00:06] [SUCCESS] Inserted into Dashboard.FiberDisconnect
+[2025-07-31 11:00:06] [INFO] Updated DataLoadedUpto to 2025-07-30 19:47:48 for PrjId 2
+[2025-07-31 11:00:06] Extracting data from 2025-07-29 20:00:51 to 2025-07-30 20:17:26
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'BttTransactional' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-31 11:00:06] [SUCCESS] Inserted into Dashboard.BttTransactional
+[2025-07-31 11:00:06] [INFO] Updated DataLoadedUpto to 2025-07-30 20:17:26 for PrjId 3
+[2025-07-31 11:00:06] Extracting data from 2025-07-29 17:08:36 to 2025-07-30 16:03:35
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Commio' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-31 11:00:06] [SUCCESS] Inserted into Dashboard.Commio
+[2025-07-31 11:00:06] [INFO] Updated DataLoadedUpto to 2025-07-30 16:03:35 for PrjId 4
+[2025-07-31 11:00:07] Extracting data from 2025-07-29 19:40:56 to 2025-07-30 19:42:39
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Bandwidth' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-31 11:00:07] [SUCCESS] Inserted into Dashboard.Bandwidth
+[2025-07-31 11:00:07] [INFO] Updated DataLoadedUpto to 2025-07-30 19:42:39 for PrjId 5
+[2025-07-31 11:00:07] Extracting data from 2025-07-29 22:59:03 to 2025-07-30 21:11:16
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Nextiva' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-31 11:00:07] [SUCCESS] Inserted into Dashboard.Nextiva
+[2025-07-31 11:00:08] [INFO] Updated DataLoadedUpto to 2025-07-30 21:11:16 for PrjId 6
+[2025-07-31 11:00:08] Extracting data from 2025-07-29 17:04:43 to 2025-07-30 16:55:32
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'PathFinder' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-31 11:00:08] [SUCCESS] Inserted into Dashboard.PathFinder
+[2025-07-31 11:00:08] [INFO] Updated DataLoadedUpto to 2025-07-30 16:55:32 for PrjId 7
+[2025-07-31 11:00:08] Extracting data from 2025-07-29 17:06:00 to 2025-07-29 17:06:00
+[2025-07-31 11:00:08] [WARNING] Source data is empty. Skipping insertion.
+[2025-07-31 11:00:08] Extracting data from 2025-07-29 17:00:50 to 2025-07-30 16:52:06
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Spectrotel' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-07-31 11:00:08] [SUCCESS] Inserted into Dashboard.Spectrotel
+[2025-07-31 11:00:08] [INFO] Updated DataLoadedUpto to 2025-07-30 16:52:06 for PrjId 9
+[2025-07-31 11:00:08] Dashboard connection closed. Script complete.
+Traceback (most recent call last):
+  File "C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py", line 34, in <module>
+    dashboard_conn = dashboard_engine.raw_connection()
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 3297, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 713, in checkout
+    rec = pool._do_get()
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 675, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 901, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 897, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 625, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\charterda\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[2025-08-01 18:56:05] Project Metadata Fetched
+[2025-08-01 18:56:05] [WARNING] to_date is NULL, running fallback query...
+[2025-08-01 18:56:05] Extracting data from 2025-07-30 19:56:40 to 2025-08-01 08:55:43
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'BttCarrier' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-01 18:56:05] [SUCCESS] Inserted into Dashboard.BttCarrier
+[2025-08-01 18:56:05] [INFO] Updated DataLoadedUpto to 2025-08-01 08:55:43 for PrjId 1
+[2025-08-01 18:56:06] [WARNING] to_date is NULL, running fallback query...
+[2025-08-01 18:56:06] Extracting data from 2025-07-30 19:47:48 to 2025-07-31 20:04:11
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'FiberDisconnect' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-01 18:56:06] [SUCCESS] Inserted into Dashboard.FiberDisconnect
+[2025-08-01 18:56:06] [INFO] Updated DataLoadedUpto to 2025-07-31 20:04:11 for PrjId 2
+[2025-08-01 18:56:06] Extracting data from 2025-07-30 20:17:26 to 2025-07-31 20:20:09
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'BttTransactional' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-01 18:56:06] [SUCCESS] Inserted into Dashboard.BttTransactional
+[2025-08-01 18:56:06] [INFO] Updated DataLoadedUpto to 2025-07-31 20:20:09 for PrjId 3
+[2025-08-01 18:56:06] Extracting data from 2025-07-30 16:03:35 to 2025-07-31 12:45:18
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Commio' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-01 18:56:06] [SUCCESS] Inserted into Dashboard.Commio
+[2025-08-01 18:56:06] [INFO] Updated DataLoadedUpto to 2025-07-31 12:45:18 for PrjId 4
+[2025-08-01 18:56:07] Extracting data from 2025-07-30 19:42:39 to 2025-08-01 05:02:07
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Bandwidth' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-01 18:56:07] [SUCCESS] Inserted into Dashboard.Bandwidth
+[2025-08-01 18:56:07] [INFO] Updated DataLoadedUpto to 2025-08-01 05:02:07 for PrjId 5
+[2025-08-01 18:56:07] Extracting data from 2025-07-30 21:11:16 to 2025-07-31 20:54:46
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Nextiva' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-01 18:56:07] [SUCCESS] Inserted into Dashboard.Nextiva
+[2025-08-01 18:56:07] [INFO] Updated DataLoadedUpto to 2025-07-31 20:54:46 for PrjId 6
+[2025-08-01 18:56:07] Extracting data from 2025-07-30 16:55:32 to 2025-07-31 16:56:34
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'PathFinder' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-01 18:56:07] [SUCCESS] Inserted into Dashboard.PathFinder
+[2025-08-01 18:56:07] [INFO] Updated DataLoadedUpto to 2025-07-31 16:56:34 for PrjId 7
+[2025-08-01 18:56:07] Extracting data from 2025-07-29 17:06:00 to 2025-07-29 17:06:00
+[2025-08-01 18:56:07] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-01 18:56:07] Extracting data from 2025-07-30 16:52:06 to 2025-08-01 09:24:03
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Spectrotel' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-01 18:56:07] [SUCCESS] Inserted into Dashboard.Spectrotel
+[2025-08-01 18:56:07] [INFO] Updated DataLoadedUpto to 2025-08-01 09:24:03 for PrjId 9
+[2025-08-01 18:56:07] Dashboard connection closed. Script complete.
+[2025-08-02 11:00:04] Project Metadata Fetched
+[2025-08-02 11:00:04] [WARNING] to_date is NULL, running fallback query...
+[2025-08-02 11:00:04] Extracting data from 2025-08-01 08:55:43 to 2025-08-01 19:54:44
+[2025-08-02 11:00:04] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-02 11:00:05] [WARNING] to_date is NULL, running fallback query...
+[2025-08-02 11:00:05] Extracting data from 2025-07-31 20:04:11 to 2025-08-01 19:41:49
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'FiberDisconnect' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-02 11:00:05] [SUCCESS] Inserted into Dashboard.FiberDisconnect
+[2025-08-02 11:00:05] [INFO] Updated DataLoadedUpto to 2025-08-01 19:41:49 for PrjId 2
+[2025-08-02 11:00:05] Extracting data from 2025-07-31 20:20:09 to 2025-07-31 20:20:09
+[2025-08-02 11:00:05] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-02 11:00:05] Extracting data from 2025-07-31 12:45:18 to 2025-08-01 13:53:27
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Commio' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-02 11:00:05] [SUCCESS] Inserted into Dashboard.Commio
+[2025-08-02 11:00:05] [INFO] Updated DataLoadedUpto to 2025-08-01 13:53:27 for PrjId 4
+[2025-08-02 11:00:05] Extracting data from 2025-08-01 05:02:07 to 2025-08-01 19:46:36
+[2025-08-02 11:00:06] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-02 11:00:06] Extracting data from 2025-07-31 20:54:46 to 2025-08-01 21:39:12
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Nextiva' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-02 11:00:06] [SUCCESS] Inserted into Dashboard.Nextiva
+[2025-08-02 11:00:06] [INFO] Updated DataLoadedUpto to 2025-08-01 21:39:12 for PrjId 6
+[2025-08-02 11:00:06] Extracting data from 2025-07-31 16:56:34 to 2025-08-01 16:57:06
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'PathFinder' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-02 11:00:07] [SUCCESS] Inserted into Dashboard.PathFinder
+[2025-08-02 11:00:07] [INFO] Updated DataLoadedUpto to 2025-08-01 16:57:06 for PrjId 7
+[2025-08-02 11:00:07] Extracting data from 2025-07-29 17:06:00 to 2025-07-29 17:06:00
+[2025-08-02 11:00:07] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-02 11:00:07] Extracting data from 2025-08-01 09:24:03 to 2025-08-01 17:09:35
+[2025-08-02 11:00:07] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-02 11:00:07] Dashboard connection closed. Script complete.
+[2025-08-03 11:00:04] Project Metadata Fetched
+[2025-08-03 11:00:04] [WARNING] to_date is NULL, running fallback query...
+[2025-08-03 11:00:04] Extracting data from 2025-08-01 08:55:43 to 2025-08-01 19:54:44
+[2025-08-03 11:00:04] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-03 11:00:05] [WARNING] to_date is NULL, running fallback query...
+[2025-08-03 11:00:05] Extracting data from 2025-08-01 19:41:49 to 2025-08-01 19:41:49
+[2025-08-03 11:00:05] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-03 11:00:05] Extracting data from 2025-07-31 20:20:09 to 2025-07-31 20:20:09
+[2025-08-03 11:00:05] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-03 11:00:05] Extracting data from 2025-08-01 13:53:27 to 2025-08-01 13:53:27
+[2025-08-03 11:00:05] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-03 11:00:05] Extracting data from 2025-08-01 05:02:07 to 2025-08-01 19:46:36
+[2025-08-03 11:00:05] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-03 11:00:05] Extracting data from 2025-08-01 21:39:12 to 2025-08-01 21:39:12
+[2025-08-03 11:00:06] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-03 11:00:06] Extracting data from 2025-08-01 16:57:06 to 2025-08-01 16:57:06
+[2025-08-03 11:00:06] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-03 11:00:06] Extracting data from 2025-07-29 17:06:00 to 2025-07-29 17:06:00
+[2025-08-03 11:00:06] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-03 11:00:06] Extracting data from 2025-08-01 09:24:03 to 2025-08-01 17:09:35
+[2025-08-03 11:00:06] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-03 11:00:06] Dashboard connection closed. Script complete.
+[2025-08-04 11:00:05] Project Metadata Fetched
+[2025-08-04 11:00:05] [WARNING] to_date is NULL, running fallback query...
+[2025-08-04 11:00:05] Extracting data from 2025-08-01 08:55:43 to 2025-08-01 19:54:44
+[2025-08-04 11:00:05] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-04 11:00:05] [WARNING] to_date is NULL, running fallback query...
+[2025-08-04 11:00:06] Extracting data from 2025-08-01 19:41:49 to 2025-08-01 19:41:49
+[2025-08-04 11:00:06] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-04 11:00:06] Extracting data from 2025-07-31 20:20:09 to 2025-07-31 20:20:09
+[2025-08-04 11:00:06] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-04 11:00:06] Extracting data from 2025-08-01 13:53:27 to 2025-08-01 13:53:27
+[2025-08-04 11:00:06] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-04 11:00:06] Extracting data from 2025-08-01 05:02:07 to 2025-08-01 19:46:36
+[2025-08-04 11:00:06] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-04 11:00:06] Extracting data from 2025-08-01 21:39:12 to 2025-08-01 21:39:12
+[2025-08-04 11:00:07] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-04 11:00:07] Extracting data from 2025-08-01 16:57:06 to 2025-08-01 16:57:06
+[2025-08-04 11:00:07] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-04 11:00:07] Extracting data from 2025-07-29 17:06:00 to 2025-07-29 17:06:00
+[2025-08-04 11:00:07] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-04 11:00:07] Extracting data from 2025-08-01 09:24:03 to 2025-08-01 17:09:35
+[2025-08-04 11:00:07] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-04 11:00:07] Dashboard connection closed. Script complete.
+[2025-08-05 11:00:04] Project Metadata Fetched
+[2025-08-05 11:00:04] [WARNING] to_date is NULL, running fallback query...
+[2025-08-05 11:00:04] Extracting data from 2025-08-01 08:55:43 to 2025-08-04 19:54:50
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'BttCarrier' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-05 11:00:05] [SUCCESS] Inserted into Dashboard.BttCarrier
+[2025-08-05 11:00:05] [INFO] Updated DataLoadedUpto to 2025-08-04 19:54:50 for PrjId 1
+[2025-08-05 11:00:05] [WARNING] to_date is NULL, running fallback query...
+[2025-08-05 11:00:05] Extracting data from 2025-08-01 19:41:49 to 2025-08-04 19:57:48
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'FiberDisconnect' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-05 11:00:05] [SUCCESS] Inserted into Dashboard.FiberDisconnect
+[2025-08-05 11:00:05] [INFO] Updated DataLoadedUpto to 2025-08-04 19:57:48 for PrjId 2
+[2025-08-05 11:00:05] Extracting data from 2025-07-31 20:20:09 to 2025-07-31 20:20:09
+[2025-08-05 11:00:05] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-05 11:00:05] Extracting data from 2025-08-01 13:53:27 to 2025-08-04 17:35:49
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Commio' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-05 11:00:06] [SUCCESS] Inserted into Dashboard.Commio
+[2025-08-05 11:00:06] [INFO] Updated DataLoadedUpto to 2025-08-04 17:35:49 for PrjId 4
+[2025-08-05 11:00:06] Extracting data from 2025-08-01 05:02:07 to 2025-08-04 20:14:17
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Bandwidth' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-05 11:00:06] [SUCCESS] Inserted into Dashboard.Bandwidth
+[2025-08-05 11:00:06] [INFO] Updated DataLoadedUpto to 2025-08-04 20:14:17 for PrjId 5
+[2025-08-05 11:00:06] Extracting data from 2025-08-01 21:39:12 to 2025-08-04 21:31:41
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Nextiva' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-05 11:00:07] [SUCCESS] Inserted into Dashboard.Nextiva
+[2025-08-05 11:00:07] [INFO] Updated DataLoadedUpto to 2025-08-04 21:31:41 for PrjId 6
+[2025-08-05 11:00:07] Extracting data from 2025-08-01 16:57:06 to 2025-08-04 17:09:19
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'PathFinder' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-05 11:00:07] [SUCCESS] Inserted into Dashboard.PathFinder
+[2025-08-05 11:00:07] [INFO] Updated DataLoadedUpto to 2025-08-04 17:09:19 for PrjId 7
+[2025-08-05 11:00:07] Extracting data from 2025-07-29 17:06:00 to 2025-07-29 17:06:00
+[2025-08-05 11:00:07] [WARNING] Source data is empty. Skipping insertion.
+[2025-08-05 11:00:07] Extracting data from 2025-08-01 09:24:03 to 2025-08-04 17:19:41
+C:\Users\charterda\PycharmProjects\DataExtract01072025\Shedule\DataExtracting.py:112: UserWarning: The provided table name 'Spectrotel' is not found exactly as such in the database after writing the table, possibly due to case sensitivity issues. Consider using lower case table names.
+  src_df.to_sql(
+[2025-08-05 11:00:07] [SUCCESS] Inserted into Dashboard.Spectrotel
+[2025-08-05 11:00:07] [INFO] Updated DataLoadedUpto to 2025-08-04 17:19:41 for PrjId 9
+[2025-08-05 11:00:07] Dashboard connection closed. Script complete.
