@@ -7,7 +7,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.engine import URL
 from sqlalchemy.types import Text
 from sqlalchemy.exc import SQLAlchemyError
-from datetime import datetime
+from datetime import datetime, timedelta
 
 def log(msg):
     """Prints a message with a timestamp."""
@@ -45,14 +45,13 @@ FROM dashboard.projects p
 LEFT JOIN dashboard.projectsdataextract pe ON p.PrjId = pe.PrjId
 WHERE p.IsCurr = 1
 """
-currentdatetime = datetime.now()
-currentdatetime_str = currentdatetime.strftime("%Y-%m-%d %H:%M:%S")
-
 project_df = pd.read_sql(metadata_query, dashboard_engine)
 log("Project Metadata Fetched")
 
 # Step 2: Loop through each project to extract and load data
 for index, row in project_df.iterrows():
+    currentdatetime = datetime.now()
+    currentdatetime_str = currentdatetime.strftime("%Y-%m-%d %H:%M:%S")
     try:
         if not row['SrcDeSql']:
             log(f"[WARNING] Skipping row {index}: Empty source SQL.")
@@ -186,7 +185,6 @@ for index, row in project_df.iterrows():
     except Exception as e:
         log(f"[ERROR] General Error in row {index}: {e}")
 
-dashboard_conn.close()
 log("Dashboard connection closed. Script complete.")
 
 # --- DB Config ---
@@ -267,7 +265,7 @@ msg['Subject'] = "BPO Projects Volume Analyzer - Daily load status"
 msg['From'] = "vinod.mahajan@tpgsi.com"
 
 # To recipients
-to_recipients = ["vinod.mahajan@tpgsi.com", "prasanna.moorthi@tpgsi.com"]
+to_recipients = ["prashanth@tpgsi.com", "prasanna.vasan@tpgsi.com", "bhaskar.guruswamy@tpgsi.com", "ernest.aloysius@tpgsi.com", "rejish.ramkrishnan@tpgsi.com"]
 
 # CC recipients
 cc_recipients = ["vinod.mahajan@tpgsi.com", "prasanna.moorthi@tpgsi.com"]
@@ -294,3 +292,168 @@ with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
     server.login(sender_email, password)
     server.sendmail(sender_email, all_recipients, msg.as_string())
     print("Email sent successfully")
+
+def extract_project_data(project_df, dashboard_db_config, log):
+    results = []
+    log("email part extracting started")
+    # Target (Dashboard) connection
+    tgt_engine_url = URL.create(
+        drivername="mysql+pymysql",
+        username=dashboard_db_config['user'],
+        password=dashboard_db_config['password'],
+        host=dashboard_db_config['host'],
+        database=dashboard_db_config['database'],
+        port=3306,
+        query={"charset": "utf8mb4"}
+    )
+    tgt_engine = create_engine(tgt_engine_url)
+
+    for _, row in project_df.iterrows():
+        src_count, tgt_count = 0, 0
+        try:
+            if not row['SrcDeSql']:
+                log(f"[WARNING] Skipping {row['PrjTbl']}: Empty source SQL.")
+                results.append({
+                    "PrjTbl": row['PrjTbl'],
+                    "SRC_Record_Count": src_count,
+                    "TGT_Record_Count": tgt_count
+                })
+                continue
+
+            # Handle ports
+            try:
+                src_port = int(float(row['SrcPort'])) if pd.notna(row['SrcPort']) else 3306
+            except ValueError:
+                log(f"[ERROR] Invalid port format in {row['PrjTbl']}, skipping.")
+                results.append({
+                    "PrjTbl": row['PrjTbl'],
+                    "SRC_Record_Count": src_count,
+                    "TGT_Record_Count": tgt_count
+                })
+                continue
+
+            # Date range
+            from_date = '2024-01-01 00:00:01'
+            to_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d 00:00:00")
+
+            # Create Source DB engine
+            src_engine_url = (
+                f"mysql+pymysql://{row['SrcUserName']}:{row['SrcPassword']}"
+                f"@{row['SrcDB']}:{src_port}/{row['SrcDbName']}?charset=utf8"
+            )
+            src_engine = create_engine(src_engine_url)
+
+            log(f"Extracting {row['PrjTbl']} data from {from_date} to {to_date}")
+
+            # Replace placeholders in SQL
+            src_sql = row['SrcDeSql'].encode().decode('unicode_escape')
+            src_sql = src_sql.replace("{from_date}", from_date).replace("{to_date}", to_date)
+
+            # Source count
+            src_df = pd.read_sql(src_sql, src_engine)
+            # print(len(src_df['id'].unique()))
+            print(len(src_df['id'].unique()))
+
+            src_count = src_df['id'].nunique()
+            src_engine.dispose()
+
+            # Target count
+            tgt_sql = f"""
+                SELECT COUNT(distinct id) AS cnt
+                FROM {row['TgtDbName']}.{row['PrjTbl']}
+                WHERE date_submitted > '{from_date}'
+                  AND date_submitted <= '{to_date}'
+            """
+            tgt_df = pd.read_sql(tgt_sql, tgt_engine)
+            tgt_count = int(tgt_df['cnt'][0])
+
+        except Exception as e:
+            log(f"[ERROR] Failed to process {row['PrjTbl']}: {e}")
+
+        # Append results
+        results.append({
+            "PrjTbl": row['PrjTbl'],
+            "SRC_Record_Count": src_count,
+            "Dashboard_Record_Count": tgt_count
+        })
+
+    tgt_engine.dispose()
+    return pd.DataFrame(results)
+
+result_df = extract_project_data(project_df, dashboard_db_config, log)
+print(result_df)
+# Check mismatches
+mismatches = result_df[result_df["SRC_Record_Count"] != result_df["Dashboard_Record_Count"]]
+
+if not mismatches.empty:
+    log("Mismatches found, preparing email...")
+
+    # Convert mismatches to HTML
+    mismatches_html = mismatches.to_html(index=False, justify="center")
+
+    html_content = f"""
+    <html>
+    <body>
+        <h3>Data Mismatch Found</h3>
+        <p>The following tables have mismatched record counts between Source and Dashboard:</p>
+        {mismatches_html}
+        <br>
+        <p>Regards,<br>Vinod Mahajan</p>
+    </body>
+    </html>
+    """
+
+    subject = "Data Mismatches Found"
+
+else:
+    log("No mismatches found, preparing email...")
+
+    html_content = """
+    <html>
+    <body>
+        <h3>No Mismatch Found</h3>
+        <p>All tables have matching record counts between Source and Dashboard.</p>
+        <br>
+        <p>Regards,<br>Vinod Mahajan</p>
+    </body>
+    </html>
+    """
+
+    subject = "No Mismatch Found"
+
+# --- Email setup ---
+msg = MIMEMultipart("alternative")
+msg['Subject'] = subject
+msg['From'] = "vinod.mahajan@tpgsi.com"
+
+# To recipients
+to_recipients = ["vinod.mahajan@tpgsi.com"]
+
+cc_recipients = ["prasanna.moorthi@tpgsi.com"]
+
+# Add headers
+msg['To'] = ", ".join(to_recipients)
+msg['Cc'] = ", ".join(cc_recipients)
+
+# Attach HTML content
+msg.attach(MIMEText(html_content, "html"))
+
+# --- SMTP Config ---
+smtp_server = "mail10.tpgsi.com"
+port = 465
+sender_email = "vinod.mahajan@tpgsi.com"
+password = "vinod!2#"
+
+context = ssl.create_default_context()
+
+# --- Send Email ---
+all_recipients = to_recipients + cc_recipients
+
+try:
+    with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+        server.login(sender_email, password)
+        server.sendmail(sender_email, all_recipients, msg.as_string())
+    log(f"Email sent successfully: {subject}")
+except Exception as e:
+    log(f"[ERROR] Failed to send email: {e}")
+dashboard_conn.close()
