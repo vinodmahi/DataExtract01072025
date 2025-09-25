@@ -293,6 +293,7 @@ with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
     server.sendmail(sender_email, all_recipients, msg.as_string())
     print("Email sent successfully")
 
+# Function to check the src_count and the dashboard count
 def extract_project_data(project_df, dashboard_db_config, log):
     results = []
     log("email part extracting started")
@@ -344,8 +345,7 @@ def extract_project_data(project_df, dashboard_db_config, log):
             src_engine = create_engine(src_engine_url)
 
             log(f"Extracting {row['PrjTbl']} data from {from_date} to {to_date}")
-
-            # Replace placeholders in SQL
+            # Replace placeholders in SQl
             src_sql = row['SrcDeSql'].encode().decode('unicode_escape')
             src_sql = src_sql.replace("{from_date}", from_date).replace("{to_date}", to_date)
 
@@ -358,6 +358,9 @@ def extract_project_data(project_df, dashboard_db_config, log):
             src_engine.dispose()
 
             # Target count
+            if row['TgtDbName'] == "Dashboard" and row['PrjTbl'] == "btttransactional":
+                from_date = "2025-08-01 10:18:18"
+
             tgt_sql = f"""
                 SELECT COUNT(distinct id) AS cnt
                 FROM {row['TgtDbName']}.{row['PrjTbl']}
